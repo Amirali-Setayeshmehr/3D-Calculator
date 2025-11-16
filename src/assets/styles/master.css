@@ -3,3 +3,12 @@
 .ins_shadow {
     box-shadow: inset 20px -20px 40px 0px rgb(0, 0, 0, 0.4);
 }
+
+.clip_p1 {
+    background-color: rgba(0, 0, 0, 0.064);
+    clip-path: polygon(0% 0%, 0% 100%, 0 0, 3.7% 13.7%, 96.3% 13.7%, 96.3% 86.3%, 100% 100%, 0 100%, 100% 100%, 100% 0%);
+}
+.clip_p2 {
+    background-color: rgba(0, 0, 0, 0.37);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 96.3% 86.3%, 3.7% 86.3%, 3.7% 13.7%);
+}
