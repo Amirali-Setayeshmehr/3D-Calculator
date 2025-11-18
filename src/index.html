@@ -22,130 +22,156 @@
                 <div class="mt-[75px]"></div>
             </div>  
 
-            <div class="absolute w-10/12 h-20 bg-black mt-16 ms-[37.5px]" >
-                <input class="caret-transparent text-white w-full h-full text-6xl focus:outline-none focus:ring-0 px-2" maxlength="10" type="text" autofocus name="number-inp" id="inp1">
+            <div class="absolute w-10/12 h-20 bg-[#0d0d0d]! mt-16 ms-[37.5px]" >
+                <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                <input  class="select-none pointer-events-none caret-transparent text-white w-full h-full text-6xl focus:outline-none focus:ring-0 px-2" maxlength="10" type="text" autofocus name="number-inp" id="inp">
             </div>
             <div class="clip_p1 absolute w-[405px] h-[110px]  mt-[49px] ms-[22.5px]" ></div>
             <div class="clip_p2 absolute w-[405px] h-[110px]  mt-[49px] ms-[22.5px]" ></div>
 
-            <div class="absolute w-[405px] h-[370px] *:relativ *:w-16 perspective-midrange transform-3d **:perspective-midrange **:transform-3d *:translate-z-4 *:h-16 *:bg-[#c5b593] mt-[165px] ms-[22.5px]  flex flex-wrap gap-x-4 items-center justify-evenly *:group *:active:translate-z-1! *:transition-all *:duration-300" >
-                <div class="bg-[#266027]!">
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> C </strong>
+            <div  class="absolute w-[405px] h-[370px] *:relativ *:w-16 perspective-midrange transform-3d **:perspective-midrange **:transform-3d *:translate-z-4 *:h-16 *:bg-[#c5b593] mt-[165px] ms-[22.5px]  flex flex-wrap gap-x-4 items-center justify-evenly *:group *:active:translate-z-1! *:transition-all *:duration-300" >
+                <div data-key="c" class="button bg-[#1f8821]!">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> C </strong>
                     <div class="w-4 h-full bg-[#173d18] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#173d18] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#173d18] transform origin-top -rotate-x-90 "></div>
+                    
                 </div>
-                <div class="w-[315px]! translate-z-0! border-0 rounded-2xl bg-[#202A44]!">
-                </div>
-                <div>
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 1 </strong>
+                <div class="button invisible">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 1 </strong>
                     <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div>
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 2 </strong>
+                <div class="button invisible">
+                    <strong class="select-none  absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 1 </strong>
                     <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div>
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 3 </strong>
+                <div class="button h-8! translate-y-[15px] bg-[#858484]!">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center"> delete </strong>
+                    <div class="w-4 h-full bg-[#4a4a4a] transform origin-left rotate-y-90"></div>
+                    <div class="w-full h-4 bg-[#4a4a4a] transform origin-top -rotate-x-90"></div>
+                    <div class="absolute top-0 w-full h-4 bg-[#6b6b6b] transform origin-top -rotate-x-90"></div>
+                </div>
+                <div class="button h-8! translate-y-[15px] bg-[#858484]!">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center"> ON/OFF </strong>
+                    <div class="w-4 h-full bg-[#4a4a4a] transform origin-left rotate-y-90"></div>
+                    <div class="w-full h-4 bg-[#4a4a4a] transform origin-top -rotate-x-90"></div>
+                    <div class="absolute top-0 w-full h-4 bg-[#6b6b6b] transform origin-top -rotate-x-90"></div>
+                    <!-- <div class="absolute top-0 transform -translate-y-5 right-3 w-2 h-2 border-0 border-black rounded-full bg-gray-700 "></div> -->
+                </div>
+                <div class="button">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 1 </strong>
                     <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div class=" bg-[#de9e08]!">
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> % </strong>
+                <div class="button">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 2 </strong>
+                    <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
+                    <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
+                    <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
+                </div>
+                <div class="button">
+                    <strong class="select-none  absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 3 </strong>
+                    <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
+                    <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
+                    <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
+                </div>
+                <div class=" button bg-[#de9e08]!">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> % </strong>
                     <div class="w-4 h-full bg-[#936906] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#d99d0f] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#d1a02d] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div class=" bg-[#de9e08]!">
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-3xl"> x² </strong>
+                <div class="button bg-[#de9e08]!">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-3xl"> x² </strong>
                     <div class="w-4 h-full bg-[#936906] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#d99d0f] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#d1a02d] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div>
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 4 </strong>
+                <div class="button">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 4 </strong>
                     <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div>
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 5 </strong>
+                <div class="button">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 5 </strong>
                     <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div>
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 6 </strong>
+                <div class="button">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 6 </strong>
                     <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div class=" bg-[#de9e08]!">
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> ÷ </strong>
+                <div class="button bg-[#de9e08]!">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> ÷ </strong>
                     <div class="w-4 h-full bg-[#936906] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#d99d0f] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#d1a02d] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div class=" bg-[#de9e08]!">
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> x </strong>
+                <div class="button bg-[#de9e08]!">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> x </strong>
                     <div class="w-4 h-full bg-[#936906] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#d99d0f] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#d1a02d] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div>
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 7 </strong>
+                <div class="button">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 7 </strong>
                     <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div>
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 8 </strong>
+                <div class="button">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 8 </strong>
                     <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div>
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 9 </strong>
+                <div class="button">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 9 </strong>
                     <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div class=" bg-[#de9e08]!">
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> - </strong>
+                <div class="button bg-[#de9e08]!">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> - </strong>
                     <div class="w-4 h-full bg-[#936906] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#d99d0f] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#d1a02d] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div class=" bg-[#de9e08]!">
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> + </strong>
+                <div class="button bg-[#de9e08]!">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> + </strong>
                     <div class="w-4 h-full bg-[#936906] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#d99d0f] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#d1a02d] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div>
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> . </strong>
+                <div class="button">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> . </strong>
                     <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div>
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 0 </strong>
+                <div class="button">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> 0 </strong>
                     <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div class="invisible">
+                <div class="button">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-2xl"> 000 </strong>
                     <div class="w-4 h-full bg-[#796d51] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#796d51] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#bdae88] transform origin-top -rotate-x-90"></div>
                 </div>
-                <div class="w-[145px]! bg-[#de9e08]!">
-                    <strong class="absolute! w-full h-full text-white flex justify-center items-center text-5xl"> = </strong>
+                <div class="button w-[145px]! bg-[#de9e08]!">
+                    <strong class="select-none absolute! w-full h-full text-white flex justify-center items-center text-5xl"> = </strong>
                     <div class="w-4 h-full bg-[#936906] transform origin-left rotate-y-90"></div>
                     <div class="w-full h-4 bg-[#d99d0f] transform origin-top -rotate-x-90"></div>
                     <div class="absolute top-0 w-full h-4 bg-[#d1a02d] transform origin-top -rotate-x-90"></div>
@@ -161,7 +187,8 @@
 
 
     <script src="assets/js/script.js">
-        
+    const _button = document.getElementById(P_button).children;
+    console.log(_button)  ;    
 
     </script>
 </body>
