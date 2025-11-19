@@ -71,17 +71,20 @@ function calc(){
             else if (button[i].children[0].innerText == "delete" && toggle == true) {
                 inp.value = inp.value.slice(0, -1);
             }
-            else if (button[i].children[0].innerText == "ON/OFF") {
-                if (toggle === true) {
-                    toggle = !toggle
-                    inp.setAttribute("readOnly", true)
-                }else{
-                    toggle = !toggle
-                    inp.removeAttribute("readOnly")
-                    // button[4].children[4].style.backgroungColor = "#1f8821"
+            // else if (button[i].children[0].innerText == "ON/OFF") {
+            //     if (toggle === true) {
+            //         toggle = !toggle
+            //         inp.setAttribute("readOnly", true)
+            //         button[4].children[4].classList.remove("bg-red-600")
+            //         button[4].children[4].classList.add("bg-green-600")
+            //     }else{
+            //         toggle = !toggle
+            //         inp.removeAttribute("readOnly")
+            //         button[4].children[4].classList.remove("bg-red-600")
+            //         button[4].children[4].classList.add("bg-gray-700")
 
-                }
-            }
+            //     }
+            // }
             else if (button[i].children[0].innerText == "-" && toggle == true) {
                 if(num == ""){
                     num = +inp.value
