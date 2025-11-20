@@ -2,7 +2,9 @@ let inp = document.getElementById("inp");
 let button = document.querySelectorAll(".button");
 let num = ""
 let _status = ""
-let toggle = true
+let toggle = false
+const lamp = document.getElementById("lamp")
+let power = ""
 
 
 inp.addEventListener("keydown", (e) => {
@@ -71,20 +73,26 @@ function calc(){
             else if (button[i].children[0].innerText == "delete" && toggle == true) {
                 inp.value = inp.value.slice(0, -1);
             }
-            // else if (button[i].children[0].innerText == "ON/OFF") {
-            //     if (toggle === true) {
-            //         toggle = !toggle
-            //         inp.setAttribute("readOnly", true)
-            //         button[4].children[4].classList.remove("bg-red-600")
-            //         button[4].children[4].classList.add("bg-green-600")
-            //     }else{
-            //         toggle = !toggle
-            //         inp.removeAttribute("readOnly")
-            //         button[4].children[4].classList.remove("bg-red-600")
-            //         button[4].children[4].classList.add("bg-gray-700")
+            else if (button[i].children[0].innerText == "ON/OFF") {
+                if (toggle === true) {
+                    toggle = !toggle
+                    inp.setAttribute("readOnly", true)
+                    lamp.classList.remove("bg-green-600")
+                    lamp.classList.add("bg-gray-700")
+                    lamp.classList.remove("lampShadow")
 
-            //     }
-            // }
+                    inp.value = ""
+                    _status = ""
+                    num = ""
+                }else{
+                    toggle = !toggle
+                    inp.removeAttribute("readOnly")
+                    lamp.classList.remove("bg-gray-700")
+                    lamp.classList.add("bg-green-600")
+                    lamp.classList.add("lampShadow")
+
+                }
+            }
             else if (button[i].children[0].innerText == "-" && toggle == true) {
                 if(num == ""){
                     num = +inp.value
@@ -107,8 +115,18 @@ function calc(){
                 _status = "x"
 
             }
-            else if (button[i].children[0].innerText == "x²" && toggle == true) {
-                inp.value *= inp.value
+            else if (button[i].children[0].innerText == "xⁿ" && toggle == true) {
+                if(num == ""){
+                    num = +inp.value
+                    inp.value = ""
+                }else{
+                    power = num
+                    for(let i = 1; i < inp.value; i++){
+                        num *= +power
+                    }
+                    inp.value = ""
+                }     
+                _status = "xⁿ"
                 
             }
             else if (button[i].children[0].innerText == "%" && toggle == true) {
@@ -122,16 +140,22 @@ function calc(){
                     inp.value = +num - +inp.value
                 }else if (_status == "x"){
                     inp.value = +num * +inp.value
+                }else if (_status == "xⁿ"){
+                    power = num
+                    for(let i = 1; i < inp.value; i++){
+                        num *= +power
+                    }
+                    inp.value = num
                 }else {
                     if (_status == "÷") {
                         inp.value = +num / +inp.value
-
                     }
-                    
                 }
                 _status = ""
                 num = ""
             }
+
+
         }) 
     });
 }

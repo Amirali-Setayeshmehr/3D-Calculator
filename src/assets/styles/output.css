@@ -7,10 +7,13 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-green-600: oklch(62.7% 0.194 149.214);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -193,11 +196,14 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-44 {
+    top: calc(var(--spacing) * 44);
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
-  .right-3 {
-    right: calc(var(--spacing) * 3);
+  .right-6 {
+    right: calc(var(--spacing) * 6);
   }
   .right-20\! {
     right: calc(var(--spacing) * 20) !important;
@@ -313,34 +319,6 @@
   .origin-top {
     transform-origin: top;
   }
-  .-translate-y-4 {
-    --tw-translate-y: calc(var(--spacing) * -4);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-5 {
-    --tw-translate-y: calc(var(--spacing) * -5);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-6 {
-    --tw-translate-y: calc(var(--spacing) * -6);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-\[4\] {
-    --tw-translate-y: calc(4 * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-\[40\] {
-    --tw-translate-y: calc(40 * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-\[40p\] {
-    --tw-translate-y: calc(40p * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-\[40px\] {
-    --tw-translate-y: calc(40px * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .translate-y-\[15px\] {
     --tw-translate-y: 15px;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -378,27 +356,21 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-0 {
     border-style: var(--tw-border-style);
     border-width: 0px;
   }
-  .border-1 {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .border-b {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 1px;
-  }
   .border-black {
     border-color: var(--color-black);
   }
+  .bg-\[\#0d0d0d\] {
+    background-color: #0d0d0d;
+  }
   .bg-\[\#0d0d0d\]\! {
     background-color: #0d0d0d !important;
+  }
+  .bg-\[\#0f0e0e\] {
+    background-color: #0f0e0e;
   }
   .bg-\[\#1f8821\]\! {
     background-color: #1f8821 !important;
@@ -417,6 +389,15 @@
   }
   .bg-\[\#796d51\] {
     background-color: #796d51;
+  }
+  .bg-\[\#161616\] {
+    background-color: #161616;
+  }
+  .bg-\[\#191919\] {
+    background-color: #191919;
+  }
+  .bg-\[\#191919\]\! {
+    background-color: #191919 !important;
   }
   .bg-\[\#858484\]\! {
     background-color: #858484 !important;
@@ -445,8 +426,14 @@
   .bg-gray-700 {
     background-color: var(--color-gray-700);
   }
+  .bg-green-600 {
+    background-color: var(--color-green-600);
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
+  }
+  .text-right {
+    text-align: right;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -463,6 +450,13 @@
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-green-600 {
+    color: var(--color-green-600);
   }
   .text-white {
     color: var(--color-white);
@@ -639,12 +633,15 @@
 .ins_shadow {
   box-shadow: inset 20px -20px 40px 0px rgb(0, 0, 0, 0.4);
 }
+.lampShadow {
+  box-shadow: 0 0 7px 3px rgba(34, 197, 94, 0.8);
+}
 .clip_p1 {
-  background-color: rgba(0, 0, 0, 0.064);
+  background-color: rgba(0, 0, 0, 0.37);
   clip-path: polygon(0% 0%, 0% 100%, 0 0, 3.7% 13.7%, 96.3% 13.7%, 96.3% 86.3%, 100% 100%, 0 100%, 100% 100%, 100% 0%);
 }
 .clip_p2 {
-  background-color: rgba(0, 0, 0, 0.37);
+  background-color: rgba(0, 0, 0, 0.064);
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 96.3% 86.3%, 3.7% 86.3%, 3.7% 13.7%);
 }
 @property --tw-translate-x {

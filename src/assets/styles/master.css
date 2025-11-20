@@ -3,15 +3,17 @@
 .ins_shadow {
     box-shadow: inset 20px -20px 40px 0px rgb(0, 0, 0, 0.4);
 }
-
+.lampShadow {
+    box-shadow: 0 0 7px 3px rgba(34, 197, 94, 0.8);
+}
 .clip_p1 {
-    background-color:rgba(0, 0, 0, 0.064) ;
     /* background-image: linear-gradient(to right,rgba(0, 0, 0, 0.277) 10%, rgba(0, 0, 0, 0.064) 30%); */
+    background-color:rgba(0, 0, 0, 0.37) ;
     clip-path: polygon(0% 0%, 0% 100%, 0 0, 3.7% 13.7%, 96.3% 13.7%, 96.3% 86.3%, 100% 100%, 0 100%, 100% 100%, 100% 0%);
 }
 .clip_p2 {
-    background-color:rgba(0, 0, 0, 0.37) ;
     /* background-image: linear-gradient(to left,rgba(0, 0, 0, 0.134) 10%, rgba(0, 0, 0, 0.37) 50%); */
+    background-color:rgba(0, 0, 0, 0.064) ;
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 96.3% 86.3%, 3.7% 86.3%, 3.7% 13.7%);
 }
 
