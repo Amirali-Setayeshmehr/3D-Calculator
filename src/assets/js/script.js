@@ -103,6 +103,13 @@ function calc(){
                 _status = "-"
     
             }
+            else if (button[i].children[0].innerText == "- / +" && toggle == true) {
+                if(inp.value[0] != "-"){
+                    inp.value = "-" + inp.value
+                }else{
+                    inp.value = inp.value.slice(1)
+                }       
+            }
             else if (button[i].children[0].innerText == "x" && toggle == true) {
                 if(num == ""){
                     num = +inp.value
