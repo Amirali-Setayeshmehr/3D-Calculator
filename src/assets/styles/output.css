@@ -7,7 +7,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-green-600: oklch(62.7% 0.194 149.214);
+    --color-emerald-400: oklch(76.5% 0.177 163.223);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-black: #000;
     --color-white: #fff;
@@ -22,6 +26,9 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
+    --tracking-wide: 0.025em;
+    --tracking-wider: 0.05em;
+    --tracking-widest: 0.1em;
     --perspective-midrange: 800px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -363,15 +370,6 @@
   .border-black {
     border-color: var(--color-black);
   }
-  .bg-\[\#0d0d0d\] {
-    background-color: #0d0d0d;
-  }
-  .bg-\[\#0d0d0d\]\! {
-    background-color: #0d0d0d !important;
-  }
-  .bg-\[\#0f0e0e\] {
-    background-color: #0f0e0e;
-  }
   .bg-\[\#1f8821\]\! {
     background-color: #1f8821 !important;
   }
@@ -390,12 +388,6 @@
   .bg-\[\#796d51\] {
     background-color: #796d51;
   }
-  .bg-\[\#161616\] {
-    background-color: #161616;
-  }
-  .bg-\[\#191919\] {
-    background-color: #191919;
-  }
   .bg-\[\#191919\]\! {
     background-color: #191919 !important;
   }
@@ -405,11 +397,23 @@
   .bg-\[\#936906\] {
     background-color: #936906;
   }
+  .bg-\[\#\] {
+    background-color: #;
+  }
+  .bg-\[\#a08f68\] {
+    background-color: #a08f68;
+  }
   .bg-\[\#bdae88\] {
     background-color: #bdae88;
   }
+  .bg-\[\#cfcfcf\] {
+    background-color: #cfcfcf;
+  }
   .bg-\[\#d1a02d\] {
     background-color: #d1a02d;
+  }
+  .bg-\[\#d1fffb\] {
+    background-color: #d1fffb;
   }
   .bg-\[\#d99d0f\] {
     background-color: #d99d0f;
@@ -420,8 +424,53 @@
   .bg-\[\#e3d1a8\] {
     background-color: #e3d1a8;
   }
-  .bg-\[\#f9f4f2\] {
-    background-color: #f9f4f2;
+  .bg-\[\#e6ffd1\] {
+    background-color: #e6ffd1;
+  }
+  .bg-\[\#ede3ca\] {
+    background-color: #ede3ca;
+  }
+  .bg-\[\#f8efd8\] {
+    background-color: #f8efd8;
+  }
+  .bg-\[\#fade9e\] {
+    background-color: #fade9e;
+  }
+  .bg-\[\#fbebc6\] {
+    background-color: #fbebc6;
+  }
+  .bg-\[\#fecd5a\] {
+    background-color: #fecd5a;
+  }
+  .bg-\[\#ffcd57\] {
+    background-color: #ffcd57;
+  }
+  .bg-\[\#ffd1d1\] {
+    background-color: #ffd1d1;
+  }
+  .bg-\[\#fff1d1\] {
+    background-color: #fff1d1;
+  }
+  .bg-\[\#fffec2\] {
+    background-color: #fffec2;
+  }
+  .bg-\[u\] {
+    background-color: u;
+  }
+  .bg-\[ur\] {
+    background-color: ur;
+  }
+  .bg-\[url\] {
+    background-color: url;
+  }
+  .bg-amber-100 {
+    background-color: var(--color-amber-100);
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
   }
   .bg-gray-700 {
     background-color: var(--color-gray-700);
@@ -429,11 +478,107 @@
   .bg-green-600 {
     background-color: var(--color-green-600);
   }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(\.\)\] {
+    background-image: url(.);
+  }
+  .bg-\[url\(\.\.\)\] {
+    background-image: url(..);
+  }
+  .bg-\[url\(\.\.\/\)\] {
+    background-image: url(../);
+  }
+  .bg-\[url\(\.\.\/i\)\] {
+    background-image: url(../i);
+  }
+  .bg-\[url\(\.\.\/im\)\] {
+    background-image: url(../im);
+  }
+  .bg-\[url\(\.\.\/img\)\] {
+    background-image: url(../img);
+  }
+  .bg-\[url\(\.\.\/img\/\)\] {
+    background-image: url(../img/);
+  }
+  .bg-\[url\(\.\.\/img\/w\)\] {
+    background-image: url(../img/w);
+  }
+  .bg-\[url\(\.\.\/img\/wi\)\] {
+    background-image: url(../img/wi);
+  }
+  .bg-\[url\(\.\.\/img\/win\)\] {
+    background-image: url(../img/win);
+  }
+  .bg-\[url\(\.\.\/img\/win7\)\] {
+    background-image: url(../img/win7);
+  }
+  .bg-\[url\(\.\.\/img\/win7b\)\] {
+    background-image: url(../img/win7b);
+  }
+  .bg-\[url\(\.\.\/img\/win7bg\)\] {
+    background-image: url(../img/win7bg);
+  }
+  .bg-\[url\(\.\.\/img\/win7bg\.\)\] {
+    background-image: url(../img/win7bg.);
+  }
+  .bg-\[url\(\.\.\/img\/win7bg\.j\)\] {
+    background-image: url(../img/win7bg.j);
+  }
+  .bg-\[url\(\.\.\/img\/win7bg\.jp\)\] {
+    background-image: url(../img/win7bg.jp);
+  }
+  .bg-\[url\(\.\.\/img\/win7bg\.jpe\)\] {
+    background-image: url(../img/win7bg.jpe);
+  }
+  .bg-\[url\(\.\.\/img\/win7bg\.jpeg\)\] {
+    background-image: url(../img/win7bg.jpeg);
+  }
+  .bg-\[url\(a\/img\/win7bg\.jpeg\)\] {
+    background-image: url(a/img/win7bg.jpeg);
+  }
+  .bg-\[url\(as\/img\/win7bg\.jpeg\)\] {
+    background-image: url(as/img/win7bg.jpeg);
+  }
+  .bg-\[url\(ass\/img\/win7bg\.jpeg\)\] {
+    background-image: url(ass/img/win7bg.jpeg);
+  }
+  .bg-\[url\(asse\/img\/win7bg\.jpeg\)\] {
+    background-image: url(asse/img/win7bg.jpeg);
+  }
+  .bg-\[url\(asset\/img\/win7bg\.jpeg\)\] {
+    background-image: url(asset/img/win7bg.jpeg);
+  }
+  .bg-\[url\(assets\/img\/win7bg\.jpeg\)\] {
+    background-image: url(assets/img/win7bg.jpeg);
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
   .text-right {
     text-align: right;
+  }
+  .font-\[d\] {
+    font-family: d;
+  }
+  .font-\[di\] {
+    font-family: di;
+  }
+  .font-\[dig\] {
+    font-family: dig;
+  }
+  .font-\[digi\] {
+    font-family: digi;
+  }
+  .font-\[digit\] {
+    font-family: digit;
+  }
+  .font-\[digita\] {
+    font-family: digita;
+  }
+  .font-\[digital\] {
+    font-family: digital;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -455,6 +600,39 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
+  }
+  .tracking-wider {
+    --tw-tracking: var(--tracking-wider);
+    letter-spacing: var(--tracking-wider);
+  }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
+  }
+  .text-\[\#3\] {
+    color: #3;
+  }
+  .text-\[\#32\] {
+    color: #32;
+  }
+  .text-\[\#32f\] {
+    color: #32f;
+  }
+  .text-\[\#32ff3\] {
+    color: #32ff3;
+  }
+  .text-\[\#32ff32\] {
+    color: #32ff32;
+  }
+  .text-\[\#32ff\] {
+    color: #32ff;
+  }
+  .text-\[\#\] {
+    color: #;
+  }
   .text-green-600 {
     color: var(--color-green-600);
   }
@@ -470,6 +648,15 @@
   }
   .perspective-midrange {
     perspective: var(--perspective-midrange);
+  }
+  .text-shadow-emerald-400 {
+    --tw-text-shadow-color: oklch(76.5% 0.177 163.223);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-text-shadow-color: color-mix(in oklab, var(--color-emerald-400) var(--tw-text-shadow-alpha), transparent);
+    }
+  }
+  .text-shadow-md {
+    text-shadow: 0px 1px 1px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 1px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 2px 4px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1));
   }
   .transform-3d {
     transform-style: preserve-3d;
@@ -644,6 +831,10 @@
   background-color: rgba(0, 0, 0, 0.064);
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 96.3% 86.3%, 3.7% 86.3%, 3.7% 13.7%);
 }
+@font-face {
+  font-family: "digital";
+  src: url(../fonts/digital-7.ttf);
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -683,6 +874,19 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-text-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-text-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
 }
 @property --tw-duration {
   syntax: "*";
@@ -770,6 +974,9 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
+      --tw-tracking: initial;
+      --tw-text-shadow-color: initial;
+      --tw-text-shadow-alpha: 100%;
       --tw-duration: initial;
       --tw-content: "";
       --tw-shadow: 0 0 #0000;

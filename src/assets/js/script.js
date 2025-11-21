@@ -6,7 +6,6 @@ let toggle = false
 const lamp = document.getElementById("lamp")
 let power = ""
 
-
 inp.addEventListener("keydown", (e) => {
     if (!((e.key >= "0" && e.key <= "9") || ["Backspace", "Delete","."].includes(e.key))){
         e.preventDefault();
@@ -85,8 +84,8 @@ function calc(){
                     _status = ""
                     num = ""
                 }else{
-                    toggle = !toggle
                     inp.removeAttribute("readOnly")
+                    toggle = !toggle
                     lamp.classList.remove("bg-gray-700")
                     lamp.classList.add("bg-green-600")
                     lamp.classList.add("lampShadow")
