@@ -20,6 +20,16 @@
     clip-path: polygon(75% 25%, 100% 0%, 100% 100%, 75% 75%, 75% 51%);
 }
 
+.duration1{
+    animation-duration: 3s;
+}
+.duration2{
+    animation-duration: 4s;
+}
+.duration3{
+    animation-duration: 5s;
+}
+
 @font-face {
     font-family: "digital";
     src: url(../fonts/digital-7.ttf);
