@@ -1,4 +1,4 @@
-# 🌮 3D-Calculator
+# 🧮 3D-Calculator
 Nostalgic 3D calculator
 
 ## 🔗 Live Demo
@@ -39,6 +39,9 @@ Feel free to reach out or follow me on social media:
 ⭐Support
 
 ## 📷 Preview | Screenshots
+
+
+![Image](https://github.com/user-attachments/assets/6ea0e471-a5bd-41fd-b39b-5a31c6d84297)
 
 
 
