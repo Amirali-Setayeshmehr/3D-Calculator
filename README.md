@@ -3,6 +3,8 @@ Nostalgic 3D calculator
 
 ## 🔗 Live Demo
 
+https://amirali-setayeshmehr.github.io/3D-Calculator/
+
 
 ## ✨ Highlights 
 
